@@ -5,15 +5,27 @@
 /*----NAV END----*/
 
 /*----MAIN PAGE----*/
+.main {
+  background-color: pink;
+}
 /*----MAIN PAGE END----*/
 
 /*----ABOUT PAGE----*/
+.about {
+  background-color: orange;
+}
 /*----ABOUT PAGE END----*/
 
 /*----LISTEN PAGE----*/
+.listen {
+  background-color: grey;
+}
 /*----LISTEN PAGE END----*/
 
 /*----CONTACT PAGE----*/
+.contact {
+  background-color: lightblue;
+}
 /*----CONTACT PAGE END----*/
 
 /*----MEDIA QUERIES----*/
