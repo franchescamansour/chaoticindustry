@@ -1,32 +1,81 @@
 /*----HTML----*/
 /*----HTML END----*/
 
+
 /*----NAV----*/
 /*----NAV END----*/
+
 
 /*----MAIN PAGE----*/
 .main {
   background-color: pink;
+  height: 100vh;
+}
+
+.logo {
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-30%);
+  width: 50%;
 }
 /*----MAIN PAGE END----*/
+
 
 /*----ABOUT PAGE----*/
 .about {
   background-color: orange;
+  height: 100vh;
 }
 /*----ABOUT PAGE END----*/
+
 
 /*----LISTEN PAGE----*/
 .listen {
   background-color: grey;
+  height: 100vh;
 }
 /*----LISTEN PAGE END----*/
+
 
 /*----CONTACT PAGE----*/
 .contact {
   background-color: lightblue;
+  height: 100vh;
 }
 /*----CONTACT PAGE END----*/
 
+
 /*----MEDIA QUERIES----*/
+@media only screen and (min-width: 400px) {
+
+
+}
+
+@media only screen and (min-width: 608px) {
+
+
+}
+
+@media only screen and (min-width: 960px) {
+
+  .logo {
+    width: 40%;
+  }
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+  .logo {
+    width: 30%;
+  }
+
+}
+
+@media only screen and (min-width: 2550px) {
+
+
+}
 /*----MEDIA QURIES END----*/
