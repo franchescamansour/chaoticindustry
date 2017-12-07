@@ -1,0 +1,20 @@
+/*ABOUT ME*/
+.aboutme img {
+  max-width: 100%;
+}
+
+.aboutme p {
+
+}
+
+.aboutme h1 {
+  padding-top: 2rem;
+}
+
+.textsection {
+  padding-right: 2rem;
+}
+
+.picture {
+  box-shadow: 10px 10px 5px grey;
+}
