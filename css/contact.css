@@ -24,6 +24,10 @@
   margin: 0;
 }
 
+.contact-icon {
+  margin-bottom: .5em;
+}
+
 .contact-social-media-icon {
   fill: #fff;
 }
