@@ -54,11 +54,6 @@ html {
 
 
 /*----CONTACT PAGE----*/
-.contact {
-  background-color: lightblue;
-  height: 100vh;
-}
-/*----CONTACT PAGE END----*/
 .contact-body {
   background-image: url("../images/contact-photo.jpg");
   position: relative;
@@ -99,6 +94,7 @@ html {
   position: absolute;
   bottom: 10%;
 }
+/*----CONTACT PAGE END----*/
 
 /*----MEDIA QUERIES----*/
 @media only screen and (min-width: 400px) {
