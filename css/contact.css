@@ -3,6 +3,11 @@
   position: relative;
 }
 
+.contact-h2 {
+  color: #fff;
+  text-align: center;
+}
+
 .contact-icon-link {
   color: #fff;
   text-decoration: none;
