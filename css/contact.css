@@ -1,0 +1,12 @@
+.contact-body {
+  background-color: #000;
+}
+
+.contact-icon-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-icon-link:hover {
+  color: #e2e2e2;
+}
