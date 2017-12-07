@@ -5,8 +5,14 @@
 .contact-icon-link {
   color: #fff;
   text-decoration: none;
+  fill: #fff;
 }
 
 .contact-icon-link:hover {
   color: #e2e2e2;
+}
+
+.contact-list {
+  padding: 0;
+  margin: 0;
 }
