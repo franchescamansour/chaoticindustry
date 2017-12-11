@@ -1,6 +1,8 @@
 .contact-body {
-  background-color: #000;
+  background-image: url("../images/contact-photo.jpg");
   position: relative;
+  background-position: 100% 100%;
+  background-size: cover;
 }
 
 .contact-h2 {
@@ -22,6 +24,10 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.contact-icon {
+  margin-bottom: .5em;
 }
 
 .contact-social-media-icon {
