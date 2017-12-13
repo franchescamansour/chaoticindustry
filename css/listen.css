@@ -1,5 +1,20 @@
+.html-listen {
+  background-image: image();
+}
+
+.listen-nav {
+  color: #000;
+  background-image: linear-gradient(to bottom, transparent, rgba(16, 52, 41, 0), rgba(0, 0, 0, .9));
+}
+
 .body-listen {
   padding: 1.5em;
+}
+
+.logo-listen {
+  width: 45%;
+  padding-top: .5em;
+  padding-left: .5em;
 }
 
 .card {
@@ -20,7 +35,11 @@
 
 @media only screen and (min-width: 38em) {
   .body-listen {
-    padding: 5em;
+    padding: 7em;
+  }
+
+  .logo-listen {
+    display: none;
   }
 
 }
