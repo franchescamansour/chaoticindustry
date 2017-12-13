@@ -54,7 +54,6 @@ nav {
 	padding: 0;
 }
 
-
 /*----NAV END----*/
 
 
@@ -92,30 +91,21 @@ nav {
 }
 
 .aboutme img {
-  max-width: 100%;
-}
-
-.aboutme figure {
-  float: right;
-  width: 300px;
-  margin-top: 5px;
-  margin-right: 80px;
-  padding-left: 1rem;
-  margin-bottom: 0px;
+  width: 100%;
+	float: right;
 }
 
 .aboutme p {
-padding-right: 3rem;
-padding-left: 3rem;
+padding: 3em;
 }
 
 .aboutme h1 {
   padding-top: 2rem;
+	font-weight: 200;
 }
 
-.wrapper {
-  margin: 0 auto;
-
+.about-body {
+	max-width: 40rem;
 }
 /*----ABOUT PAGE END----*/
 
