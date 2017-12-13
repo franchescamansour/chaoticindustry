@@ -86,17 +86,12 @@ nav {
 
 
 /*----ABOUT PAGE----*/
-.about {
-  height: 100vh;
+.aboutme {
+  min-height: 100vh;
 }
 
-.aboutme img {
+.picture {
   width: 100%;
-	float: right;
-}
-
-.aboutme p {
-padding: 3em;
 }
 
 .aboutme h1 {
@@ -105,7 +100,7 @@ padding: 3em;
 }
 
 .about-body {
-	max-width: 40rem;
+	padding: 2em;
 }
 /*----ABOUT PAGE END----*/
 
@@ -157,8 +152,9 @@ padding: 3em;
 }
 
 .social-media-icons {
-  position: absolute;
+  position: fixed;
   bottom: 10%;
+	left: 5%;
 }
 /*----CONTACT PAGE END----*/
 
@@ -183,6 +179,14 @@ padding: 3em;
     width: 30%;
 		top: 10%;
   }
+
+	.picture {
+	  width: 50%;
+	}
+
+	.about-body {
+		padding: (0, 5em, 5em, 5em)
+	}
 
 }
 
