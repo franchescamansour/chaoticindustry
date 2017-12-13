@@ -54,7 +54,6 @@ nav {
 	padding: 0;
 }
 
-
 /*----NAV END----*/
 
 
@@ -87,35 +86,24 @@ nav {
 
 
 /*----ABOUT PAGE----*/
-.about {
-  height: 100vh;
+.aboutme {
+  min-height: 100vh;
 }
 
-.aboutme img {
-  max-width: 100%;
-}
-
-.aboutme figure {
-  float: right;
-  width: 300px;
-  margin-top: 5px;
-  margin-right: 80px;
-  padding-left: 1rem;
-  margin-bottom: 0px;
-}
-
-.aboutme p {
-padding-right: 3rem;
-padding-left: 3rem;
+.picture {
+  width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 
 .aboutme h1 {
   padding-top: 2rem;
+	font-weight: 200;
 }
 
-.wrapper {
-  margin: 0 auto;
-
+.about-body {
+	padding: 2em;
 }
 /*----ABOUT PAGE END----*/
 
@@ -167,8 +155,9 @@ padding-left: 3rem;
 }
 
 .social-media-icons {
-  position: absolute;
+  position: fixed;
   bottom: 10%;
+	left: 5%;
 }
 /*----CONTACT PAGE END----*/
 
@@ -185,6 +174,10 @@ padding-left: 3rem;
 		top: 10%;
 	}
 
+	.picture {
+	  width: 50%;
+	}
+
 }
 
 @media only screen and (min-width: 960px) {
@@ -194,6 +187,11 @@ padding-left: 3rem;
 		top: 10%;
   }
 
+	.picture {
+	  width: 50%;
+	}
+
+
 }
 
 @media only screen and (min-width: 1440px) {
@@ -202,6 +200,10 @@ padding-left: 3rem;
     width: 25%;
 		top: 15%;
   }
+
+	.about-body {
+		padding: 5em;
+	}
 
 }
 
