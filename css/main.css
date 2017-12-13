@@ -54,12 +54,47 @@ html {
 
 
 /*----CONTACT PAGE----*/
-.contact {
-  background-color: lightblue;
-  height: 100vh;
+.contact-body {
+  background-image: url("../images/contact-photo.jpg");
+  position: relative;
+  background-position: 100% 100%;
+  background-size: cover;
+}
+
+.contact-h2 {
+  color: #fff;
+  text-align: center;
+}
+
+.contact-icon-link {
+  color: #fff;
+  text-decoration: none;
+  fill: #fff;
+}
+
+.contact-icon-link:hover {
+  color: #e2e2e2;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-icon {
+  margin-bottom: .5em;
+}
+
+.contact-social-media-icon {
+  fill: #fff;
+}
+
+.social-media-icons {
+  position: absolute;
+  bottom: 10%;
 }
 /*----CONTACT PAGE END----*/
-
 
 /*----MEDIA QUERIES----*/
 @media only screen and (min-width: 400px) {

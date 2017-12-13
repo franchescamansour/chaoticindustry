@@ -1,0 +1,11 @@
+.btnpause{ play
+}
+
+.btnplaying{
+ pause as image
+}
+
+.buttons-play-pause{
+  border-radius: 10px;
+  background-color: #red;
+}
