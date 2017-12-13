@@ -67,18 +67,55 @@ nav {
 .logo {
   text-align: center;
   position: absolute;
-  top: 30%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%,-30%);
   width: 50%;
+}
+
+.slogan {
+	color: white;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 40px;
+	font-weight: 300;
 }
 /*----MAIN PAGE END----*/
 
 
 /*----ABOUT PAGE----*/
 .about {
-  background-color: orange;
   height: 100vh;
+}
+
+.aboutme img {
+  max-width: 100%;
+}
+
+.aboutme figure {
+  float: right;
+  width: 300px;
+  margin-top: 5px;
+  margin-right: 80px;
+  padding-left: 1rem;
+  margin-bottom: 0px;
+}
+
+.aboutme p {
+padding-right: 3rem;
+padding-left: 3rem;
+}
+
+.aboutme h1 {
+  padding-top: 2rem;
+}
+
+.wrapper {
+  margin: 0 auto;
+
 }
 /*----ABOUT PAGE END----*/
 
@@ -94,9 +131,10 @@ nav {
 /*----CONTACT PAGE----*/
 .contact-body {
   background-image: url("../images/contact-photo.jpg");
-  position: relative;
+
   background-position: 100% 100%;
   background-size: cover;
+	height: 100vh;
 }
 
 .contact-h2 {
@@ -142,13 +180,18 @@ nav {
 
 @media only screen and (min-width: 608px) {
 
+	.logo {
+		width: 40%;
+		top: 10%;
+	}
 
 }
 
 @media only screen and (min-width: 960px) {
 
   .logo {
-    width: 40%;
+    width: 30%;
+		top: 10%;
   }
 
 }
@@ -156,7 +199,8 @@ nav {
 @media only screen and (min-width: 1440px) {
 
   .logo {
-    width: 30%;
+    width: 25%;
+		top: 15%;
   }
 
 }
