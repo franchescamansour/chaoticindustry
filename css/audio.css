@@ -1,12 +1,14 @@
-.btnpause{
- background-image: url("../images/play-button.svg");
-}
-
-.btnplaying{
- background-image: url("../images/pause-button.svg");
-}
-
 .buttons-play-pause{
-  border-radius: 10px;
-  background-color: #red;
+  background-image: url("../images/play-button.svg");
+  background-repeat: no-repeat;
+  height: 2rem;
+  width: 2rem;
+  background-color: red;
+}
+
+.btnsplaying{
+  background-image: url("../images/pause-button.svg");
+  background-repeat: no-repeat;
+  height: 2rem;
+  width: 2rem;
 }

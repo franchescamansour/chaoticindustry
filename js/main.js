@@ -4,9 +4,9 @@ var audio = $(".listen").get(0);
 $btn.on('click', function () {
   if (audio.paused) {
     audio.play();
-    $btn.addClass("btnpause")
+    $btn.addClass("btnsplaying")
   } else {
     audio.pause();
-    $btn.removeClass("btnplaying")
+    $btn.removeClass("btnsplaying")
   }
 });
