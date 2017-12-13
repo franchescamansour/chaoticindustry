@@ -1,8 +1,9 @@
-.btnpause{ play
+.btnpause{
+ background-image: url("../images/play-button.svg");
 }
 
 .btnplaying{
- pause as image
+ background-image: url("../images/pause-button.svg");
 }
 
 .buttons-play-pause{
