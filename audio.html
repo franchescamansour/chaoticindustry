@@ -14,11 +14,19 @@
 </head>
 <body>
 
-  <audio class="listen"src="music/song-01.mp3">
-    Sample Audio
-  </audio>
-  <button class=buttons-play-pause></button>
+  <body>
+    <audio class="abs-center" id="music" preload="true">
+      <source src="music/song-01.mp3">
+    </audio>
 
+    <div id="wrapper">
+      <div id="audioplayer">
+        <button id="pButton" class="play"></button>
+        <div id="timeline">
+          <div id="playhead"></div>
+        </div>
+      </div>
+    </div>
 
 <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="js/main.js"></script>

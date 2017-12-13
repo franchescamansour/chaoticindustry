@@ -10,6 +10,7 @@
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/listen.css" rel="stylesheet">
+  <link href="css/audio.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 </head>
 
@@ -30,7 +31,19 @@
             <img class="push-1-4 song-img" src="images/placeholder-1by1.svg" alt="">
           </div>
           <div class="unit xs-3-4 s-3-4 m-1 l-1">
-            <img class="push-1-2 song-audio" src="images/placeholder-3by1.svg" alt="">
+            <audio class="" id="music" preload="true">
+                <source src="music/song-01.mp3">
+              </audio>
+
+              <div id="wrapper">
+                <div id="audioplayer">
+                  <button id="pButton" class="play"></button>
+                  <div id="timeline">
+                    <div id="playhead"></div>
+                  </div>
+                </div>
+              </div>
+
           </div>
         </div>
         <p class="text-center push-0">The Fault in Our Stars</p>
@@ -152,5 +165,8 @@
       </div>
     </section>
   </div>
+
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
