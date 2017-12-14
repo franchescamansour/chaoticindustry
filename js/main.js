@@ -1,90 +1,25 @@
-document.addEventListener("DOMContentLoaded", function(event) {
+var wrapper=document.querySelector(".super-wrapper-inner");
 
-var music = document.getElementById('music');
-var duration;
-var pButton = document.getElementById('pButton');
-var playhead = document.getElementById('playhead');
-var timeline = document.getElementById('timeline');
+var listenlink=document.querySelector(".nav-listen a");
+listenlink.addEventListener("click", function(e){
+  e.preventDefault();
+  wrapper.classList.add("show-listen")
+  wrapper.classList.remove("show-bio")
+  wrapper.classList.remove("show-contact")
+})
 
-var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
+var biolink=document.querySelector(".nav-bio a");
+biolink.addEventListener("click", function(e){
+  e.preventDefault();
+  wrapper.classList.remove("show-listen")
+  wrapper.classList.add("show-bio")
+  wrapper.classList.remove("show-contact")
+})
 
-pButton.addEventListener("click", play);
-
-music.addEventListener("timeupdate", timeUpdate, false);
-
-timeline.addEventListener("click", function(event) {
-    moveplayhead(event);
-    music.currentTime = duration * clickPercent(event);
-}, false);
-
-function clickPercent(event) {
-    return (event.clientX - getPosition(timeline)) / timelineWidth;
-
-}
-
-playhead.addEventListener('mousedown', mouseDown, false);
-window.addEventListener('mouseup', mouseUp, false);
-
-var onplayhead = false;
-
-function mouseDown() {
-    onplayhead = true;
-    window.addEventListener('mousemove', moveplayhead, true);
-    music.removeEventListener('timeupdate', timeUpdate, false);
-}
-
-function mouseUp(event) {
-    if (onplayhead == true) {
-        moveplayhead(event);
-        window.removeEventListener('mousemove', moveplayhead, true);
-
-        music.currentTime = duration * clickPercent(event);
-        music.addEventListener('timeupdate', timeUpdate, false);
-    }
-    onplayhead = false;
-}
-
-function moveplayhead(event) {
-    var newMargLeft = event.clientX - getPosition(timeline);
-
-    if (newMargLeft >= 0 && newMargLeft <= timelineWidth) {
-        playhead.style.marginLeft = newMargLeft + "px";
-    }
-    if (newMargLeft < 0) {
-        playhead.style.marginLeft = "0px";
-    }
-    if (newMargLeft > timelineWidth) {
-        playhead.style.marginLeft = timelineWidth + "px";
-    }
-}
-
-function timeUpdate() {
-    var playPercent = timelineWidth * (music.currentTime / duration);
-    playhead.style.marginLeft = playPercent + "px";
-    if (music.currentTime == duration) {
-        pButton.className = "";
-        pButton.className = "play";
-    }
-}
-
-function play() {
-    if (music.paused) {
-        music.play();
-        pButton.className = "";
-        pButton.className = "pause";
-    } else {
-        music.pause();
-        pButton.className = "";
-        pButton.className = "play";
-    }
-}
-
-music.addEventListener("canplaythrough", function() {
-    duration = music.duration;
-}, false);
-
-function getPosition(el) {
-    return el.getBoundingClientRect().left;
-}
-
-});
+var contactlink=document.querySelector(".nav-contact a");
+contactlink.addEventListener("click", function(e){
+  e.preventDefault();
+  wrapper.classList.remove("show-listen")
+  wrapper.classList.remove("show-bio")
+  wrapper.classList.add("show-contact")
+})
