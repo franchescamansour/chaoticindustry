@@ -4,7 +4,7 @@
 
 .listen-nav {
   color: #000;
-  background-image: linear-gradient(to bottom, transparent, rgba(16, 52, 41, 0), rgba(0, 0, 0, .9));
+  /*background-image: linear-gradient(to bottom, transparent, rgba(16, 52, 41, 0), rgba(0, 0, 0, .9));*/
 }
 
 .body-listen {
