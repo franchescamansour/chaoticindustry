@@ -12,9 +12,11 @@
 }
 
 .logo-listen {
-  width: 45%;
+  width: 35%;
   padding-top: .5em;
-  padding-left: .5em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card {
