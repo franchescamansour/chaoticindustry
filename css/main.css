@@ -58,7 +58,6 @@ nav {
   right: 5%;
   transform: rotate(90deg) translateY(-50%);
   top: 50%;
-  transition: all 0.5s ease;
 }
 
 
@@ -67,7 +66,6 @@ nav {
   left: 5%;
   transform: rotate(-90deg) translateY(-50%);
   top: 50%;
-  transition: all 0.5s ease;
 }
 
 .nav-listen{
@@ -75,7 +73,6 @@ nav {
   right: 5%;
   transform: rotate(90deg) translateY(-50%);
   top: 50%;
-  transition: all 0.5s ease;
 }
 
 .nav-bio{
@@ -83,7 +80,6 @@ nav {
   bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
-  transition: all 0.5s ease;
 }
 
 .nav-ul {
@@ -257,15 +253,21 @@ nav {
 		position: relative;
 		padding-left: 100vw;
 		transform: translate(-100vw,0);
-		transition: all 1.3s ease-in;
+		transition: all 0.5s ease-out;
 	}
+
 
 .show-bio .nav-text {
   	color: black;
   }
 
+.show-listen .nav-text {
+  color: black;
+}
+
 .show-listen .super-wrapper-inner {
 		transform: translate(-200vw,0);
+    transition:
 	}
 
 .show-bio .super-wrapper-inner {
@@ -307,7 +309,8 @@ nav {
 .show-bio .nav-bio{
   display: none;
 }
-	.aboutme{
+
+  .aboutme{
 		position: absolute;
 		top: 100vh;
 		width: 100vw;
