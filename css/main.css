@@ -34,11 +34,40 @@ nav {
   position: fixed;
 }
 
+.nav-home-top{
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 5%;
+  transition: all 0.5s ease;
+}
+
+.nav-home-left{
+  display: none;
+  position: absolute;
+  left: 5%;
+  transform: rotate(-90deg) translateY(-50%);
+  top: 50%;
+  transition: all 0.5s ease;
+}
+
+.nav-home-right{
+  display: none;
+  position: absolute;
+  right: 5%;
+  transform: rotate(90deg) translateY(-50%);
+  top: 50%;
+  transition: all 0.5s ease;
+}
+
+
 .nav-contact{
   position: absolute;
   left: 5%;
   transform: rotate(-90deg) translateY(-50%);
   top: 50%;
+  transition: all 0.5s ease;
 }
 
 .nav-listen{
@@ -46,6 +75,7 @@ nav {
   right: 5%;
   transform: rotate(90deg) translateY(-50%);
   top: 50%;
+  transition: all 0.5s ease;
 }
 
 .nav-bio{
@@ -53,6 +83,7 @@ nav {
   bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
+  transition: all 0.5s ease;
 }
 
 .nav-ul {
@@ -229,26 +260,53 @@ nav {
 		transition: all 1.3s ease-in;
 	}
 
-	.show-listen .super-wrapper-inner {
+.show-bio .nav-text {
+  	color: black;
+  }
+
+.show-listen .super-wrapper-inner {
 		transform: translate(-200vw,0);
 	}
 
-	.show-bio .super-wrapper-inner {
+.show-bio .super-wrapper-inner {
 		transform: translate(-100vw,-100vh);
 	}
 
-.show-bio .nav-text {
-	color: black;
-}
-
-	.show-contact .super-wrapper-inner {
+.show-contact .super-wrapper-inner {
 		transform: translate(0,0);
 	}
 
-	.main{
+.show-listen .nav-home-left{
+  display: block;
+}
 
-	}
+.show-listen .nav-contact{
+  display: none;
+}
 
+.show-listen .nav-listen{
+  display: none;
+}
+
+.show-contact .nav-home-right{
+  display: block;
+}
+
+.show-contact .nav-listen{
+  display: none;
+}
+
+.show-contact .nav-contact{
+  display: none;
+}
+
+.show-bio .nav-home-top{
+  display: block;
+}
+
+.show-bio .nav-bio{
+  display: none;
+}
 	.aboutme{
 		position: absolute;
 		top: 100vh;
@@ -288,7 +346,6 @@ nav {
     width: 100vw;
     height: 100vh;
   }
-
 }
 
 @media only screen and (min-width: 2550px) {
