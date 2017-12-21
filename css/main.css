@@ -27,14 +27,12 @@ html {
 nav {
 	position: fixed;
 	z-index: 1;
-=======
   text-decoration: none;
   color: white;
 }
 
 nav {
   position: fixed;
->>>>>>> ed6cb1ef7d5a820e3b7cca85c1aae1356d5e6916
 }
 
 .nav-contact{
@@ -269,7 +267,7 @@ nav {
 		top: 0;
 		width: 100vw;
 	}
-=======
+
   .picture {
     width: 50%;
   }
@@ -331,9 +329,6 @@ nav {
   top: 0;
   width: 100vw;
   }
->>>>>>> ed6cb1ef7d5a820e3b7cca85c1aae1356d5e6916
-
-
 
 }
 
