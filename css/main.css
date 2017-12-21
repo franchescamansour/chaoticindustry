@@ -276,28 +276,28 @@ nav {
 		transform: translate(0,0);
 	}
 
-.show-listen .nav-home-left{
+.show-listen .nav-home-top{
   display: block;
 }
 
 .show-listen .nav-contact{
-  display: none;
+  display: block;
 }
 
 .show-listen .nav-listen{
-  display: none;
+  display: block;
 }
 
-.show-contact .nav-home-right{
+.show-contact .nav-home-top{
   display: block;
 }
 
 .show-contact .nav-listen{
-  display: none;
+  display: block;
 }
 
 .show-contact .nav-contact{
-  display: none;
+  display: block;
 }
 
 .show-bio .nav-home-top{
