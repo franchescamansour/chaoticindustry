@@ -20,10 +20,12 @@ html {
 .nav-text {
 	text-decoration: none;
 	color: white;
+	transition: all 0.7s ease;
 }
 
 nav {
 	position: fixed;
+	z-index: 1;
 }
 
 .nav-contact{
@@ -198,28 +200,33 @@ nav {
 	.super-wrapper {
 		overflow: hidden;
 		width: 100vw;
-		height: 100vw;
+		height: 100vh;
 		position: relative;
 	}
 
 	.super-wrapper-inner {
 		overflow: hidden;
 		width: 300vw;
+		height: 200vh;
 		position: relative;
 		padding-left: 100vw;
 		transform: translate(-100vw,0);
 		transition: all 1.3s ease-in;
 	}
 
-	.show-listen {
+	.show-listen .super-wrapper-inner {
 		transform: translate(-200vw,0);
 	}
 
-	.show-bio {
+	.show-bio .super-wrapper-inner {
 		transform: translate(-100vw,-100vh);
 	}
 
-	.show-contact {
+.show-bio .nav-text {
+	color: black;
+}
+
+	.show-contact .super-wrapper-inner {
 		transform: translate(0,0);
 	}
 
