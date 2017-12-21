@@ -21,9 +21,9 @@
 
 .card {
   text-align: center;
-  border-radius: 10px;
+  border-radius: 15px;
   border: 3px solid #fff;
-  background-color: #ccc;
+  background-color: #000;
   color: #fff;
 }
 
