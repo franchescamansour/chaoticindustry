@@ -67,8 +67,11 @@ nav {
 
 /*----MAIN PAGE----*/
 .main {
+  background-image: url("../images/banner.jpg");
+  background-repeat: no-repeat;
   background-color: black;
-  height: 100vh;
+  height: 1080px;
+  width: 1920px;
 }
 
 .logo {
@@ -91,8 +94,8 @@ nav {
   font-weight: 300;
 }
 
-.banner {
-  max-width: 100%;
+.bannerimg {
+  width: 100%;
 }
 /*----MAIN PAGE END----*/
 
@@ -333,12 +336,17 @@ nav {
 @media only screen and (min-width: 1440px) {
 
   .logo {
-    width: 25vw;
-  top: 15vh;
+    width: 20vw;
+    top: 15vh;
   }
 
   .about-body {
-  padding: 5em;
+    padding: 5em;
+  }
+
+  .bannerimg {
+    width: 100vw;
+    height: 100vh;
   }
 
 }
