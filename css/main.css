@@ -159,9 +159,9 @@ nav {
 
 
 /*----CONTACT PAGE----*/
+
 .contact-body {
   background-image: url("../images/contact-photo.jpg");
-
   background-position: 100% 100%;
   background-size: cover;
   height: 100vh;
@@ -190,6 +190,10 @@ nav {
 
 .contact-icon {
   margin-bottom: .5em;
+}
+
+.contact-icon-text {
+  font-weight: 300;
 }
 
 .contact-social-media-icon {
@@ -356,6 +360,11 @@ nav {
   .slogan {
     font-size: 80px;
   }
+
+  .icon-li {
+    display: inline-block;
+  }
+
 }
 
 @media only screen and (min-width: 2550px) {
