@@ -39,14 +39,14 @@ nav {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 5%;
+  top: 1%;
   transition: all 0.5s ease;
 }
 
 .nav-home-left{
   display: none;
   position: absolute;
-  left: 5%;
+  left: 1%;
   transform: rotate(-90deg) translateY(-50%);
   top: 50%;
   transition: all 0.5s ease;
@@ -55,7 +55,7 @@ nav {
 .nav-home-right{
   display: none;
   position: absolute;
-  right: 5%;
+  right: 1%;
   transform: rotate(90deg) translateY(-50%);
   top: 50%;
 }
@@ -63,21 +63,21 @@ nav {
 
 .nav-contact{
   position: absolute;
-  left: 5%;
+  left: 0%;
   transform: rotate(-90deg) translateY(-50%);
   top: 50%;
 }
 
 .nav-listen{
   position: absolute;
-  right: 5%;
+  right: 1%;
   transform: rotate(90deg) translateY(-50%);
   top: 50%;
 }
 
 .nav-bio{
   position: absolute;
-  bottom: 10%;
+  bottom: 1%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -207,6 +207,9 @@ nav {
 
 /*----MEDIA QUERIES----*/
 @media only screen and (min-width: 400px) {
+  .main-nav {
+    display: none;
+  }
 
 
 }
@@ -217,7 +220,9 @@ nav {
   width: 40%;
   top: 10%;
   }
-
+  .main-nav {
+    display:  block;
+  }
   .picture {
     width: 50%;
   }
@@ -307,7 +312,7 @@ nav {
 }
 
 .show-bio .nav-bio{
-  display: none;
+  display: block;
 }
 
   .aboutme{
