@@ -628,7 +628,7 @@ ul {
 }
 
 ul > li::before {
-  content: "·";
+  content: ;
   float: left;
   margin-left: -1.6em;
   width: 1.3em;
