@@ -23,6 +23,12 @@ html {
 	transition: all 0.7s ease;
 }
 
+.bullet-gone {
+  text-decoration: none;
+  list-style-type: none;
+  
+}
+
 nav {
 	position: fixed;
 	z-index: 1;
