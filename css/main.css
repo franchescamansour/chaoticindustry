@@ -92,7 +92,7 @@ nav {
 
 /*----MAIN PAGE----*/
 .main {
-  background-image: url("../images/banner.jpg");
+  background-image: url("../images/banner2.jpg");
   background-repeat: no-repeat;
   background-color: black;
   height: 100vh;
@@ -117,8 +117,8 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 40px;
-  font-weight: 300;
+  font-size: 60px;
+  font-weight: 400;
 }
 
 .bannerimg {
@@ -153,7 +153,7 @@ nav {
 /*----LISTEN PAGE----*/
 .listen {
   background-color: grey;
-  height: 100vh;
+  min-height: 100vh;
 }
 /*----LISTEN PAGE END----*/
 
@@ -351,6 +351,10 @@ nav {
   .bannerimg {
     width: 100vw;
     height: 100vh;
+  }
+
+  .slogan {
+    font-size: 80px;
   }
 }
 
