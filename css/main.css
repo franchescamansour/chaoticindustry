@@ -23,6 +23,10 @@ html {
 	transition: all 0.7s ease;
 }
 
+.nav-text:hover {
+  font-family: 'Shadows Into Light', cursive;
+}
+
 
 nav {
 	position: fixed;
@@ -146,7 +150,7 @@ nav {
 }
 
 .about-body {
-  padding: 2em;
+  padding: 1em;
 }
 /*----ABOUT PAGE END----*/
 
@@ -359,10 +363,6 @@ nav {
   .logo {
     width: 20vw;
     top: 15vh;
-  }
-
-  .about-body {
-    padding: 5em;
   }
 
   .bannerimg {
