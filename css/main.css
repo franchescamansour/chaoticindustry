@@ -156,6 +156,10 @@ nav {
   background-color: grey;
   min-height: 100vh;
 }
+
+.projects {
+  font-weight: 300;
+}
 /*----LISTEN PAGE END----*/
 
 
