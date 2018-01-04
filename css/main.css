@@ -376,6 +376,11 @@ nav {
 
   .icon-li {
     display: inline-block;
+    text-align: center;
+  }
+
+  .contact-list {
+    text-align: center;
   }
 
   .projects {
