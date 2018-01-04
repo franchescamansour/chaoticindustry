@@ -158,7 +158,13 @@ nav {
 }
 
 .projects {
+  color: #E4E4E4;
   font-weight: 300;
+  text-align: center;
+}
+
+.listen-title {
+  color: white;
 }
 /*----LISTEN PAGE END----*/
 
@@ -274,7 +280,7 @@ nav {
   }
 
 .show-listen .nav-text {
-  color: black;
+  color: white;
 }
 
 .show-listen .super-wrapper-inner {
@@ -370,6 +376,13 @@ nav {
 
   .icon-li {
     display: inline-block;
+  }
+
+  .projects {
+    font-size: 30px;
+    margin-bottom: 0;
+    margin-left: 1em;
+    text-align: left;
   }
 
 }
