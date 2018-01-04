@@ -155,7 +155,7 @@ nav {
 /*----LISTEN PAGE----*/
 .listen {
   background-color: grey;
-  height: 100vh;
+  min-height: 100vh;
 }
 /*----LISTEN PAGE END----*/
 
