@@ -177,8 +177,7 @@ nav {
 
 .contact-body {
   background-image: url("../images/contact-photo2.jpg");
-  background-position: 100% 100%;
-  background-size: cover;
+  min-height: 100vh;
   height: 100vh;
 }
 

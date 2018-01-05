@@ -3,18 +3,30 @@
   max-width: 100%;
 }
 
-.aboutme p {
+.aboutme figure {
+  float: right;
+  width: 300px;
+  margin-top: 5px;
+  margin-right: 80px;
+  padding-left: 1rem;
+  margin-bottom: 0px;
+}
 
+.aboutme p {
+padding-right: 3rem;
+padding-left: 3rem;
 }
 
 .aboutme h1 {
   padding-top: 2rem;
 }
 
-.textsection {
-  padding-right: 2rem;
-}
-
 .picture {
   box-shadow: 10px 10px 5px grey;
+  border: 10px solid black;
+}
+
+.wrapper {
+  margin: 0 auto;
+
 }
