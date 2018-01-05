@@ -18,49 +18,76 @@ html {
 
 /*----NAV----*/
 .nav-text {
-<<<<<<< HEAD
 	text-decoration: none;
 	color: white;
 	transition: all 0.7s ease;
 }
 
+.nav-text:hover {
+  font-family: 'Shadows Into Light', cursive;
+}
+
+
 nav {
 	position: fixed;
 	z-index: 1;
-=======
   text-decoration: none;
   color: white;
 }
 
 nav {
   position: fixed;
->>>>>>> ed6cb1ef7d5a820e3b7cca85c1aae1356d5e6916
 }
 
+.nav-home-top{
+  display: none;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 1%;
+  transition: all 0.5s ease;
+}
+
+.nav-home-left{
+  display: none;
+  position: fixed;
+  left: 1%;
+  transform: rotate(-90deg) translateY(-50%);
+  top: 50%;
+  transition: all 0.5s ease;
+}
+
+.nav-home-right{
+  display: none;
+  position: fixed;
+  right: 1%;
+  transform: rotate(90deg) translateY(-50%);
+  top: 50%;
+}
+
+
 .nav-contact{
-  position: absolute;
-  left: 5%;
+  position: fixed;
+  left: 0%;
   transform: rotate(-90deg) translateY(-50%);
   top: 50%;
 }
 
 .nav-listen{
-  position: absolute;
-  right: 5%;
+  position: fixed;
+  right: 1%;
   transform: rotate(90deg) translateY(-50%);
   top: 50%;
 }
 
 .nav-bio{
-  position: absolute;
-  bottom: 10%;
+  position: fixed;
+  bottom: 1%;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .nav-ul {
-  height: 100vh;
-  width: 100vw;
   margin: 0;
   padding: 0;
 }
@@ -70,8 +97,13 @@ nav {
 
 /*----MAIN PAGE----*/
 .main {
+  background-image: url("../images/banner2.jpg");
+  background-repeat: no-repeat;
   background-color: black;
   height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  position: relative;
 }
 
 .logo {
@@ -90,12 +122,12 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 40px;
-  font-weight: 300;
+  font-size: 60px;
+  font-weight: 400;
 }
 
-.banner {
-  max-width: 100%;
+.bannerimg {
+  width: 100%;
 }
 /*----MAIN PAGE END----*/
 
@@ -108,7 +140,7 @@ nav {
 .picture {
   width: 100%;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 0;
   display: block;
 }
 
@@ -118,23 +150,33 @@ nav {
 }
 
 .about-body {
-  padding: 2em;
+  padding: 1em;
 }
 /*----ABOUT PAGE END----*/
 
 
 /*----LISTEN PAGE----*/
 .listen {
-  background-color: grey;
-  height: 100vh;
+  background-image: url("../images/listen-photo.jpg");
+  min-height: 100vh;
+}
+
+.projects {
+  color: #E4E4E4;
+  font-weight: 300;
+  text-align: center;
+}
+
+.listen-title {
+  color: white;
 }
 /*----LISTEN PAGE END----*/
 
 
 /*----CONTACT PAGE----*/
-.contact-body {
-  background-image: url("../images/contact-photo.jpg");
 
+.contact-body {
+  background-image: url("../images/contact-photo2.jpg");
   background-position: 100% 100%;
   background-size: cover;
   height: 100vh;
@@ -165,6 +207,10 @@ nav {
   margin-bottom: .5em;
 }
 
+.contact-icon-text {
+  font-weight: 300;
+}
+
 .contact-social-media-icon {
   fill: #fff;
 }
@@ -178,6 +224,9 @@ nav {
 
 /*----MEDIA QUERIES----*/
 @media only screen and (min-width: 400px) {
+  .main-nav {
+    display: none;
+  }
 
 
 }
@@ -188,7 +237,9 @@ nav {
   width: 40%;
   top: 10%;
   }
-
+  .main-nav {
+    display:  block;
+  }
   .picture {
     width: 50%;
   }
@@ -202,7 +253,6 @@ nav {
   top: 10vh;
   }
 
-<<<<<<< HEAD
 	.picture {
 	  width: 50%;
 	}
@@ -225,30 +275,64 @@ nav {
 		position: relative;
 		padding-left: 100vw;
 		transform: translate(-100vw,0);
-		transition: all 1.3s ease-in;
+		transition: all 0.5s ease-out;
 	}
 
-	.show-listen .super-wrapper-inner {
+
+.show-bio .nav-text {
+  	color: black;
+  }
+
+.show-listen .nav-text {
+  color: white;
+}
+
+.show-listen .super-wrapper-inner {
 		transform: translate(-200vw,0);
+    transition:
 	}
 
-	.show-bio .super-wrapper-inner {
+.show-bio .super-wrapper-inner {
 		transform: translate(-100vw,-100vh);
 	}
 
-.show-bio .nav-text {
-	color: black;
-}
-
-	.show-contact .super-wrapper-inner {
+.show-contact .super-wrapper-inner {
 		transform: translate(0,0);
 	}
 
-	.main{
+.show-listen .nav-home-top{
+  display: block;
+}
 
-	}
+.show-listen .nav-contact{
+  display: block;
+}
 
-	.aboutme{
+.show-listen .nav-listen{
+  display: block;
+}
+
+.show-contact .nav-home-top{
+  display: block;
+}
+
+.show-contact .nav-listen{
+  display: block;
+}
+
+.show-contact .nav-contact{
+  display: block;
+}
+
+.show-bio .nav-home-top{
+  display: block;
+}
+
+.show-bio .nav-bio{
+  display: block;
+}
+
+  .aboutme{
 		position: absolute;
 		top: 100vh;
 		width: 100vw;
@@ -258,9 +342,11 @@ nav {
 
 	.listen{
 		position: absolute;
+    overflow-y: scroll;
 		right: 0;
 		top: 0;
 		width: 100vw;
+    height: 100vh;
 	}
 
 	.contact-body{
@@ -269,83 +355,39 @@ nav {
 		top: 0;
 		width: 100vw;
 	}
-=======
-  .picture {
-    width: 50%;
-  }
-
-  html, body {
-  overflow: hidden;
-  }
-
-  .super-wrapper {
-  overflow: hidden;
-  width: 100vw;
-  height: 100vw;
-  position: relative;
-  }
-
-  .super-wrapper-inner {
-  overflow: hidden;
-  width: 300vw;
-  position: relative;
-  padding-left: 100vw;
-  transform: translate(-100vw,0);
-  transition: all 1.3s ease-in;
-  }
-
-  .show-listen {
-  transform: translate(-200vw,0);
-  }
-
-  .show-bio {
-  transform: translate(-100vw,-100vh);
-  }
-
-  .show-contact {
-  transform: translate(0,0);
-  }
-
-  .main{
-
-  }
-
-  .aboutme{
-  position: absolute;
-  top: 100vh;
-  width: 100vw;
-  left: 100vw;
-  height: 100vh;
-  }
-
-  .listen{
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100vw;
-  }
-
-  .contact-body{
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  }
->>>>>>> ed6cb1ef7d5a820e3b7cca85c1aae1356d5e6916
-
-
 
 }
 
 @media only screen and (min-width: 1440px) {
 
   .logo {
-    width: 25vw;
-  top: 15vh;
+    width: 20vw;
+    top: 15vh;
   }
 
-  .about-body {
-  padding: 5em;
+  .bannerimg {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .slogan {
+    font-size: 80px;
+  }
+
+  .icon-li {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .contact-list {
+    text-align: center;
+  }
+
+  .projects {
+    font-size: 30px;
+    margin-bottom: 0;
+    margin-left: 1em;
+    text-align: left;
   }
 
 }
