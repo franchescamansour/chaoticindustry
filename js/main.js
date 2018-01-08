@@ -32,18 +32,18 @@ hometoplink.addEventListener("click", function(e){
   document.body.classList.remove("show-contact")
 })
 
-var homeleftlink=document.querySelector(".nav-home-left a");
-homeleftlink.addEventListener("click", function(e){
-  e.preventDefault();
-  document.body.classList.remove("show-listen")
-  document.body.classList.remove("show-bio")
-  document.body.classList.remove("show-contact")
-})
-
-var homerightlink=document.querySelector(".nav-home-right a");
-homerightlink.addEventListener("click", function(e){
-  e.preventDefault();
-  document.body.classList.remove("show-listen")
-  document.body.classList.remove("show-bio")
-  document.body.classList.remove("show-contact")
-})
+// var homeleftlink=document.querySelector(".nav-home-left a");
+// homeleftlink.addEventListener("click", function(e){
+//   e.preventDefault();
+//   document.body.classList.remove("show-listen")
+//   document.body.classList.remove("show-bio")
+//   document.body.classList.remove("show-contact")
+// })
+//
+// var homerightlink=document.querySelector(".nav-home-right a");
+// homerightlink.addEventListener("click", function(e){
+//   e.preventDefault();
+//   document.body.classList.remove("show-listen")
+//   document.body.classList.remove("show-bio")
+//   document.body.classList.remove("show-contact")
+// })
