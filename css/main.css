@@ -157,6 +157,10 @@ nav {
 .about-body {
   padding: 1em;
 }
+
+.textsection {
+  padding-right: 5rem;
+}
 /*----ABOUT PAGE END----*/
 
 
@@ -175,6 +179,7 @@ nav {
 .listen-title {
   color: white;
 }
+
 /*----LISTEN PAGE END----*/
 
 
@@ -264,6 +269,8 @@ nav {
   .nav-contact, .nav-bio, .nav-listen {
     display: block;
   }
+
+
 
 	.super-wrapper {
 		overflow: hidden;
