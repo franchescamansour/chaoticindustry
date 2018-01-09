@@ -216,6 +216,11 @@ nav {
   text-align: center;
 }
 
+.contact-copy {
+  text-align: center;
+  color: #fff;
+}
+
 .contact-icon-link {
   color: #fff;
   text-decoration: none;
