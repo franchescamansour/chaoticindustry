@@ -172,13 +172,13 @@ nav {
 }
 
 .bio-logo {
-  left: 600px;
-  top: 50px;
+  left: 690px;
+  top: 18px;
   height: 100%;
   position: absolute;
-  top: 0;
   width: 100%;
   fill: currentColor;
+  z-index: 100000;
 }
 /*----ABOUT PAGE END----*/
 

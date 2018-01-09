@@ -40,12 +40,17 @@ nav {
 }
 
 .nav-home-top{
-  display: none;
+  /*display: none;*/
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
   top: 1%;
   transition: all 0.5s ease;
+}
+
+.i-home {
+  width: 128px;
+  height: 128px;
 }
 
 .nav-home-left{
@@ -129,6 +134,15 @@ nav {
 .bannerimg {
   width: 100%;
 }
+
+.make-noise {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /*----MAIN PAGE END----*/
 
 
@@ -152,6 +166,20 @@ nav {
 .about-body {
   padding: 1em;
 }
+
+.textsection {
+  padding-right: 5rem;
+}
+
+.bio-logo {
+  left: 690px;
+  top: 18px;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  fill: currentColor;
+  z-index: 100000;
+}
 /*----ABOUT PAGE END----*/
 
 
@@ -170,6 +198,7 @@ nav {
 .listen-title {
   color: white;
 }
+
 /*----LISTEN PAGE END----*/
 
 
@@ -221,15 +250,10 @@ nav {
   left: 5%;
 }
 /*----CONTACT PAGE END----*/
-
-/*----MEDIA QUERIES----*/
-@media only screen and (min-width: 400px) {
-  .main-nav {
-    display: none;
-  }
-
-
+.nav-contact, .nav-bio, .nav-listen {
+  display: none;
 }
+/*----MEDIA QUERIES----*/
 
 @media only screen and (min-width: 608px) {
 
@@ -261,6 +285,12 @@ nav {
 		overflow: hidden;
 	}
 
+  .nav-contact, .nav-bio, .nav-listen {
+    display: block;
+  }
+
+
+
 	.super-wrapper {
 		overflow: hidden;
 		width: 100vw;
@@ -277,6 +307,13 @@ nav {
 		transform: translate(-100vw,0);
 		transition: all 0.5s ease-out;
 	}
+
+  .show-bio .i-home,
+  .show-listen .i-home,
+  .show-contact .i-home {
+    width: 64px;
+    height: 64px;
+  }
 
 
 .show-bio .nav-text {
