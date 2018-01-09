@@ -170,6 +170,11 @@ nav {
 .textsection {
   padding-right: 5rem;
 }
+
+.bio-logo {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /*----ABOUT PAGE END----*/
 
 
