@@ -172,6 +172,12 @@ nav {
 }
 
 .bio-logo {
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  fill: currentColor;
 }
 /*----ABOUT PAGE END----*/
 
