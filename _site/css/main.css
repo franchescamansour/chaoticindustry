@@ -178,7 +178,7 @@ nav {
   position: absolute;
   width: 100%;
   fill: currentColor;
-  z-index: 100000;
+  z-index: 1000;
 }
 /*----ABOUT PAGE END----*/
 
@@ -214,6 +214,11 @@ nav {
 .contact-h2 {
   color: #fff;
   text-align: center;
+}
+
+.contact-copy {
+  text-align: center;
+  color: #fff;
 }
 
 .contact-icon-link {
