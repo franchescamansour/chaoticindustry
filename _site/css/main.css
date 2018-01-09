@@ -178,7 +178,7 @@ nav {
   position: absolute;
   width: 100%;
   fill: currentColor;
-  z-index: 100000;
+  z-index: 1000;
 }
 /*----ABOUT PAGE END----*/
 
