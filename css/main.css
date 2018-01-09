@@ -172,7 +172,8 @@ nav {
 }
 
 .bio-logo {
-  left: 50px;
+  position: relative;
+  left: 500px;
 }
 /*----ABOUT PAGE END----*/
 
