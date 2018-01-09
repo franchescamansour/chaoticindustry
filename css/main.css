@@ -172,11 +172,10 @@ nav {
 }
 
 .bio-logo {
-  left: 600px;
+  left: 700px;
   top: 50px;
   height: 100%;
   position: absolute;
-  top: 0;
   width: 100%;
   fill: currentColor;
 }
