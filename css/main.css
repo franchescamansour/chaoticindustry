@@ -308,10 +308,6 @@ nav {
 
 @media only screen and (min-width: 608px) {
 
-  .logo {
-  width: 40%;
-  top: 10%;
-  }
 
   .main-nav {
     display:  block;
@@ -328,6 +324,7 @@ nav {
 }
 
 @media only screen and (min-width: 960px) {
+
 
   .logo {
     width: 30vw;
@@ -513,6 +510,10 @@ nav {
 
   .textsection {
     padding-right: 5rem;
+  }
+
+  .contact-content {
+    margin-top: 5em;
   }
 
 }
