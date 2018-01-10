@@ -25,6 +25,7 @@ html {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  position: fixed;
   z-index: 20000;
   right: 50px;
   bottom: 30px;
@@ -134,7 +135,6 @@ nav {
   transform: rotate(90deg) translateY(-50%);
   top: 50%;
 }
-
 
 .nav-contact{
   position: fixed;
@@ -393,7 +393,6 @@ nav {
     width: 64px;
     height: 64px;
   }
-
 
   .show-bio .nav-text {
     	color: black;

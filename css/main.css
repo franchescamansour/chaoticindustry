@@ -18,20 +18,14 @@ html {
 
 /*----NAV----*/
 
-<<<<<<< HEAD
-/*--toggle nav--*/
-.toggle-nav {
-  z-index: 20000000000000000;
-}
-=======
   /*--toggle nav--*/
->>>>>>> 3530ef8459f70cb6d3dbc6036c62850991d8dd44
 
 .nav {
   display: none;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  position: fixed;
   z-index: 20000;
   right: 50px;
   bottom: 30px;
@@ -111,11 +105,6 @@ nav {
   position: fixed;
 }
 
-.main-logo {
-  background-color: pink;
-  width: 40%;
-}
-
 .nav-home-top{
   visibility: hidden;
   position: fixed;
@@ -146,7 +135,6 @@ nav {
   transform: rotate(90deg) translateY(-50%);
   top: 50%;
 }
-
 
 .nav-contact{
   position: fixed;
@@ -188,6 +176,14 @@ nav {
   position: relative;
 }
 
+.logo {
+  text-align: center;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%,-30%);
+  width: 50%;
+}
 
 .slogan {
   color: white;
@@ -397,7 +393,6 @@ nav {
     width: 64px;
     height: 64px;
   }
-
 
   .show-bio .nav-text {
     	color: black;
