@@ -334,10 +334,6 @@ nav {
   top: 10vh;
   }
 
-	.picture {
-	  width: 50%;
-	}
-
 	html, body {
 		overflow: hidden;
 	}
@@ -444,10 +440,17 @@ nav {
 		width: 100vw;
 		left: 100vw;
 		height: 100vh;
+    padding-top: 5rem;
 	}
 
+  .picture {
+    width: 100%;
+    margin-left: auto;
+    padding-left: 3rem;
+  }
+
   .textsection {
-    padding-right: 5rem;
+    padding-right: 2rem;
   }
 
 	.listen{
@@ -502,6 +505,14 @@ nav {
     margin-bottom: 0;
     margin-left: 1em;
     text-align: left;
+  }
+
+  .picture {
+    width: 75%;
+  }
+
+  .textsection {
+    padding-right: 5rem;
   }
 
 }
