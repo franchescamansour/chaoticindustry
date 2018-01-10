@@ -18,7 +18,7 @@ html {
 
 /*----NAV----*/
 
-  /*--toggle nav--*/
+/*--toggle nav--*/
 .toggle-nav {
   z-index: 20000000000000000;
 }
@@ -105,6 +105,11 @@ nav {
   position: fixed;
 }
 
+.main-logo {
+  background-color: pink;
+  width: 40%;
+}
+
 .nav-home-top{
   visibility: hidden;
   position: fixed;
@@ -177,14 +182,6 @@ nav {
   position: relative;
 }
 
-.logo {
-  text-align: center;
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%,-30%);
-  width: 50%;
-}
 
 .slogan {
   color: white;
