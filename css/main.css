@@ -351,6 +351,10 @@ nav {
     top: 28%;
   }
 
+  .main-logo {
+    display: none;
+  }
+
 	.super-wrapper {
 		overflow: hidden;
 		width: 100vw;
