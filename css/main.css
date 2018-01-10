@@ -17,6 +17,72 @@ html {
 
 
 /*----NAV----*/
+
+  /*--toggle nav--*/
+.toggle-nav {
+  z-index: 20000000000000000;
+}
+
+.nav {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  z-index: 20000;
+  right: 15px;
+  bottom: 0px;
+  padding: 15px 13px;
+}
+
+.nav a {
+  display: block;
+  padding: 0.5em;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-check:checked ~ .nav {
+  display: block;
+}
+
+.nav-check {
+  position: absolute;
+  top: -3em;
+}
+
+.nav-label {
+  cursor: pointer;
+  display: inline-block;
+  width: 40px;
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+}
+
+.nav-open,
+.nav-close {
+  display: block;
+  width: 100%;
+}
+
+.nav-check:checked ~ .nav-label {
+  background-color: #ff
+}
+
+.nav-close {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-open {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-close {
+  display: block;
+}
+  /*--end toggle nav--*/
+
+
 .nav-text {
 	text-decoration: none;
 	color: white;
