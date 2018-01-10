@@ -317,6 +317,10 @@ nav {
     display:  block;
   }
 
+  .make-noise {
+    width: 50%
+  }
+
   .picture {
     width: 50%;
   }
