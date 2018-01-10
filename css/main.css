@@ -181,7 +181,8 @@ nav {
 }
 
 .main-logo {
-  background-color: pink;
+  z-index: 200;
+  margin-top: 5%;
   width: 30%;
 }
 
