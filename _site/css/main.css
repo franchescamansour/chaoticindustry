@@ -164,11 +164,11 @@ nav {
 }
 
 .about-body {
-  padding: 1em;
+  padding: 0.2em;
 }
 
 .textsection {
-  padding-right: 5rem;
+
 }
 
 .bio-logo {
@@ -273,6 +273,10 @@ nav {
     width: 50%;
   }
 
+  .bio-picture {
+    text-align: center;
+  }
+
 }
 
 @media only screen and (min-width: 960px) {
@@ -296,11 +300,7 @@ nav {
 
   .make-noise {
     width: 10%;
-    text-align: center;
-    position: absolute;
     top: 28%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 
 	.super-wrapper {
@@ -328,58 +328,58 @@ nav {
   }
 
 
-.show-bio .nav-text {
-  	color: black;
+  .show-bio .nav-text {
+    	color: black;
+    }
+
+  .show-listen .nav-text {
+    color: white;
   }
 
-.show-listen .nav-text {
-  color: white;
-}
+  .show-listen .super-wrapper-inner {
+  		transform: translate(-200vw,0);
+      transition:
+  	}
 
-.show-listen .super-wrapper-inner {
-		transform: translate(-200vw,0);
-    transition:
-	}
+  .show-bio .super-wrapper-inner {
+  		transform: translate(-100vw,-100vh);
+  	}
 
-.show-bio .super-wrapper-inner {
-		transform: translate(-100vw,-100vh);
-	}
+  .show-contact .super-wrapper-inner {
+  		transform: translate(0,0);
+  	}
 
-.show-contact .super-wrapper-inner {
-		transform: translate(0,0);
-	}
+  .show-listen .nav-home-top{
+    display: block;
+  }
 
-.show-listen .nav-home-top{
-  display: block;
-}
+  .show-listen .nav-contact{
+    display: block;
+  }
 
-.show-listen .nav-contact{
-  display: block;
-}
+  .show-listen .nav-listen{
+    display: block;
+  }
 
-.show-listen .nav-listen{
-  display: block;
-}
+  .show-contact .nav-home-top{
+    display: block;
+  }
 
-.show-contact .nav-home-top{
-  display: block;
-}
+  .show-contact .nav-listen{
+    display: block;
+  }
 
-.show-contact .nav-listen{
-  display: block;
-}
+  .show-contact .nav-contact{
+    display: block;
+  }
 
-.show-contact .nav-contact{
-  display: block;
-}
+  .show-bio .nav-home-top{
+    display: block;
+  }
 
-.show-bio .nav-home-top{
-  display: block;
-}
-
-.show-bio .nav-bio{
-  display: block;
-}
+  .show-bio .nav-bio{
+    display: block;
+  }
 
   .aboutme{
 		position: absolute;
@@ -388,6 +388,10 @@ nav {
 		left: 100vw;
 		height: 100vh;
 	}
+
+  .textsection {
+    padding-right: 5rem;
+  }
 
 	.listen{
 		position: absolute;
