@@ -198,6 +198,10 @@ nav {
 
 
 /*----ABOUT PAGE----*/
+.logo-black {
+  display: none;
+}
+
 .aboutme {
   min-height: 100vh;
 }
@@ -436,6 +440,20 @@ nav {
     display: block;
   }
 
+  .logo-black {
+    display: block;
+    transform: translateX(-30%);
+    position: absolute;
+    top: 1em;
+    transition: all 0.5s ease;
+    z-index: 100000000000;
+  }
+
+  .bio-logo {
+    left: 420px;
+    top: 1px;
+  }
+
   .aboutme{
 		position: absolute;
 		top: 100vh;
@@ -519,6 +537,11 @@ nav {
 
   .contact-content {
     margin-top: 5em;
+  }
+
+  .bio-logo {
+    left: 658px;
+    top: 0.5px;
   }
 
 }

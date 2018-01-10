@@ -181,7 +181,8 @@ nav {
 }
 
 .main-logo {
-  background-color: pink;
+  z-index: 200;
+  margin-top: 5%;
   width: 30%;
 }
 
@@ -197,6 +198,10 @@ nav {
 
 
 /*----ABOUT PAGE----*/
+.logo-black {
+  display: none;
+}
+
 .aboutme {
   min-height: 100vh;
 }
@@ -308,10 +313,6 @@ nav {
 
 @media only screen and (min-width: 608px) {
 
-  .logo {
-  width: 40%;
-  top: 10%;
-  }
 
   .main-nav {
     display:  block;
@@ -332,6 +333,7 @@ nav {
 }
 
 @media only screen and (min-width: 960px) {
+
 
   .logo {
     width: 30vw;
@@ -438,6 +440,20 @@ nav {
     display: block;
   }
 
+  .logo-black {
+    display: block;
+    transform: translateX(-30%);
+    position: absolute;
+    top: 1em;
+    transition: all 0.5s ease;
+    z-index: 100000000000;
+  }
+
+  .bio-logo {
+    left: 420px;
+    top: 1px;
+  }
+
   .aboutme{
 		position: absolute;
 		top: 100vh;
@@ -517,6 +533,15 @@ nav {
 
   .textsection {
     padding-right: 5rem;
+  }
+
+  .contact-content {
+    margin-top: 5em;
+  }
+
+  .bio-logo {
+    left: 658px;
+    top: 0.5px;
   }
 
 }
