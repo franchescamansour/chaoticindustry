@@ -342,6 +342,12 @@ nav {
 		overflow: hidden;
 	}
 
+  .nav-label,
+  .nav-open,
+  .nav-close {
+    display: none;
+  }
+
   .nav-contact, .nav-bio, .nav-listen {
     display: block;
   }
